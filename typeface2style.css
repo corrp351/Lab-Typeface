@@ -1,0 +1,2023 @@
+/*@media only screen and (max-width: 600px) {
+	body {
+ 		background-color: black;
+	}	
+	div{
+		transform: scale(0.66);
+		left:-180px;
+	}
+}
+@media only screen and (min-width: 601px){
+	body{
+	 	background-color: white;
+	 	overflow-x: hidden;
+	}	
+	div{
+		transform: scale(1);
+	}
+}*/
+
+body{
+	background-color: #ffffff;
+	overflow-x: hidden;
+}
+div{
+	position: relative;
+}
+.grabbable {
+    cursor: move;
+    cursor: pointer;
+}
+.push{
+	top:-40px;
+	left:20px;
+}
+.pusha{
+	top:40px;
+	left:45px;
+}
+.pushb{
+	top:40px;
+	left:65px;
+}
+.pushc{
+	top:40px;
+	left:145px;
+}
+.shapes{
+	width:10px; 
+	position: absolute;
+	outline:2px solid;
+}
+.color1{
+	color:#003399;
+}
+.color2{
+	color:#8c1aff;
+}
+.color3{
+	color:#66ff99;
+}
+.color4{
+	color:#fffe33;
+}
+.color5{
+	color:#e60000;
+}
+.color6{
+	color:#30ffdf;
+}
+.color7{
+	color:#cc0099;
+}
+.color8{
+	color:#33adff;
+}
+.color9{
+	color:#ff9a08;
+}
+.color10{
+	color:#3333cc;
+}
+.color11{
+	color:#006600;
+}
+.color12{
+	color:#ff35a3;
+}
+.color13{
+	color:#ccccff;
+}
+.color14{
+	color:#ff6c66;
+}
+.color15{
+	color:#e3fa00;
+}
+.color16{
+	color:#99bbff;
+}
+.color17{
+	color:#ffcccc;
+}
+.color18{
+	color:#00ff00;
+}
+.color19{
+	color:#05ccff;
+}
+.color20{
+	color:#80002a;
+}
+.color21{
+	color:#5c5c8a;
+}
+.color22{
+	color:#b3ff00;
+}
+.color23{
+	color:#800080;
+}
+.color24{
+	color:#ce8dff;
+}
+.color25{
+	color:#ff6600;
+}
+.color26{
+	color:#99ffeb;
+}
+#Aleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:50px;
+	left:100px;
+}
+#Aright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:50px;
+	left:130px;
+}
+#Amiddle{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:70px;
+	left:115px;
+}
+#Bback{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:195px;
+}
+#Btop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:30px;
+	left:220px;
+}
+#Brighttop{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:55px;
+	left:245px;
+}
+#Bmiddle{
+	height: 70px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:65px;
+	left:225px;
+}
+#Brightbottom{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:95px;
+	left:255px;
+}
+#Bbottom{
+	height: 70px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:105px;
+	left:225px;
+}
+#Cback{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:305px;
+}
+#Ctop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:30px;
+	left:330px;
+}
+#Cbottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:110px;
+	left:330px;
+}
+#Dleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:400px;
+}
+#Dtop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(100deg);
+	top:35px;
+	left:420px;
+}
+#Dbottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(80deg);
+	top:105px;
+	left:420px;
+}
+#Dright{
+	height: 80px;
+	position: absolute;
+	background: none;
+	top:60px;
+	left:445px;
+}
+#Eback{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:505px;
+}
+#Etop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:30px;
+	left:530px;
+}
+#Emiddle{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:85px;
+	left:520px;
+}
+#Ebottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:110px;
+	left:530px;
+}
+#Fback{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:615px;
+}
+#Ftop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:30px;
+	left:640px;
+}
+#Fmiddle{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:85px;
+	left:630px;
+}
+#Gback{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:705px;
+}
+#Gtop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:30px;
+	left:730px;
+}
+#Gbottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:110px;
+	left:730px;
+}
+#Grightsmall{
+	height: 45px;
+	position: absolute;
+	background: none;
+	top:100px;
+	left:755px;
+}
+#Gmiddle{
+	height: 30px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:95px;
+	left:745px;
+}
+#Hleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:810px;
+}
+#Hright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:860px;
+}
+#Hmiddle{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:75px;
+	left:835px;
+}
+#Istock{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:930px;
+}
+#Itop{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:40px;
+	left:930px;
+}
+#Ibottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:110px;
+	left:930px;
+}
+#Jstock{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:50px;
+	left:1040px;
+}
+#Jtop{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:40px;
+	left:1040px;
+}
+#Jbottom{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:120px;
+	left:1025px;
+}
+#Kstock{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:90px;
+}
+#Ktop{
+	height: 80px;
+	position: absolute;
+	background: none;
+	transform: rotate(45deg);
+	top:195px;
+	left:110px;
+}
+#Kbottom{
+	height: 70px;
+	position: absolute;
+	background: none;
+	transform: rotate(-45deg);
+	top:235px;
+	left:110px;
+}
+#Lstock{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:190px;
+}
+#Lbottom{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:270px;
+	left:205px;
+}
+#Mleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:280px;
+}
+#Mright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:340px;
+}
+#Mtopleft{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(-45deg);
+	top:200px;
+	left:295px;
+}
+#Mtopright{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(45deg);
+	top:200px;
+	left:325px;
+}
+#Nleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:400px;
+}
+#Nright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:450px;
+}
+#Nmiddle{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-30deg);
+	top:200px;
+	left:425px;
+}
+#Oleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:510px;
+}
+#Oright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:560px;
+}
+#Otop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:180px;
+	left:535px;
+}
+#Obottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:260px;
+	left:535px;
+}
+#Pleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:620px;
+}
+#Ptop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:180px;
+	left:645px;
+}
+#Pbottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:220px;
+	left:645px;
+}
+#Pright{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:205px;
+	left:670px;
+}
+#Qleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:720px;
+}
+#Qright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:770px;
+}
+#Qtop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:180px;
+	left:745px;
+}
+#Qbottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:260px;
+	left:745px;
+}
+#Qtail{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(-45deg);
+	top:260px;
+	left:785px;
+}
+#Rleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:840px;
+}
+#Rtop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:180px;
+	left:865px;
+}
+#Rbottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:220px;
+	left:865px;
+}
+#Rright{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:205px;
+	left:890px;
+}
+#Rslant{
+	height: 80px;
+	position: absolute;
+	background: none;
+	transform: rotate(-55deg);
+	top:235px;
+	left:875px;
+}
+#Stop{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:185px;
+	left:985px;
+}
+#Sleftside{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:200px;
+	left:965px;
+}
+#Smiddle{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:220px;
+	left:985px;
+}
+#Srightside{
+	height: 65px;
+	position: absolute;
+	background: none;
+	top:240px;
+	left:1005px;
+}
+#Sbottom{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:270px;
+	left:985px;
+}
+#Tstock{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:350px;
+	left:130px;
+}
+#Ttop{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:330px;
+	left:130px;
+}
+#Uleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:350px;
+	left:210px;
+}
+#Uright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:350px;
+	left:260px;
+}
+#Ubottom{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:410px;
+	left:235px;
+}
+#Vleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:350px;
+	left:330px;
+}
+#Vright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:350px;
+	left:360px;
+}
+#Wleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:350px;
+	left:440px;
+}
+#Wmiddleleft{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:350px;
+	left:470px;
+}
+#Wmiddleright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:350px;
+	left:490px;
+}
+#Wright{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:350px;
+	left:520px;
+}
+#Xleft{
+	height: 110px;
+	position: absolute;
+	background: none;
+	transform: rotate(25deg);
+	top:345px;
+	left:600px;
+}
+#Xright{
+	height: 110px;
+	position: absolute;
+	background: none;
+	transform: rotate(-25deg);
+	top:345px;
+	left:605px;
+}
+#Yright{
+	height: 110px;
+	position: absolute;
+	background: none;
+	transform: rotate(25deg);
+	top:345px;
+	left:700px;
+}
+#Yleft{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(-40deg);
+	top:345px;
+	left:690px;
+}
+#Zmiddle{
+	height: 110px;
+	position: absolute;
+	background: none;
+	transform: rotate(25deg);
+	top:345px;
+	left:790px;
+}
+#Ztop{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:335px;
+	left:790px;
+}
+#Zbottom{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:415px;
+	left:790px;
+}
+
+/*Quote*/
+.quoteshadow{
+	top:550px;
+	left:0px;
+	font-family: "Nunito";
+	font-size: 2em;
+}
+.puzzlebox1{
+	width:650px;
+	height:350px;
+	background-color: #f0f0f5;
+	position: absolute;
+	top:600px;
+	left:300px;
+}
+.directions{
+	top:575px;
+	left:-10px;
+	font-family: "Montserrat";
+	font-size:1em;
+}
+
+/*Letter pieces*/
+
+#Aleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:895px;
+	left:1030px;
+	z-index: 2;
+}
+#Aright1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:1150px;
+	left:130px;
+}
+#Amiddle1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1070px;
+	left:115px;
+}
+
+
+
+#Bback1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1250px;
+	left:15px;
+}
+#Btop1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:930px;
+	left:100px;
+}
+#Brighttop1{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:1055px;
+	left:215px;
+}
+#Bmiddle1{
+	height: 70px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1165px;
+	left:525px;
+}
+#Brightbottom1{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:995px;
+	left:255px;
+}
+#Bbottom1{
+	height: 70px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1005px;
+	left:165px;
+}
+#Bback2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1350px;
+	left:305px;
+}
+#Btop2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:890px;
+	left:1090px;
+}
+#Brighttop2{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:955px;
+	left:45px;
+}
+#Bmiddle2{
+	height: 70px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1365px;
+	left:85px;
+}
+#Brightbottom2{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:1195px;
+	left:995px;
+}
+#Bbottom2{
+	height: 70px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1000px;
+	left:835px;
+}
+
+
+
+#Dleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:980px;
+	left:400px;
+}
+#Dtop1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(100deg);
+	top:925px;
+	left:0px;
+}
+#Dbottom1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(80deg);
+	top:1115px;
+	left:30px;
+}
+#Dright1{
+	height: 80px;
+	position: absolute;
+	background: none;
+	top:1160px;
+	left:87px;
+}
+#Dleft2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1450px;
+	left:634px;
+}
+#Dtop2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(100deg);
+	top:1065px;
+	left:467px;
+}
+#Dbottom2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(80deg);
+	top:945px;
+	left:500px;
+}
+#Dright2{
+	height: 80px;
+	position: absolute;
+	background: none;
+	top:860px;
+	left:29px;
+}
+#Dleft3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1190px;
+	left:863px;
+}
+#Dtop3{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(100deg);
+	top:1275px;
+	left:407px;
+}
+#Dbottom3{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(80deg);
+	top:1445px;
+	left:968px;
+}
+#Dright3{
+	height: 80px;
+	position: absolute;
+	background: none;
+	top:806px;
+	left:978px;
+}
+#Dleft4{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:937px;
+	left:143px;
+}
+#Dtop4{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(100deg);
+	top:843px;
+	left:178px;
+}
+#Dbottom4{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(80deg);
+	top:1027px;
+	left:72px;
+}
+#Dright4{
+	height: 80px;
+	position: absolute;
+	background: none;
+	top:1236px;
+	left:696px;
+}
+
+
+
+
+#Eback1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1154px;
+	left:505px;
+}
+#Etop1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:956px;
+	left:671px;
+}
+#Emiddle1{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1064px;
+	left:987px;
+}
+#Ebottom1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1409px;
+	left:600px;
+}
+#Eback2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1037px;
+	left:717px;
+}
+#Etop2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:919px;
+	left:181px;
+}
+#Emiddle2{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1296px;
+	left:133px;
+}
+#Ebottom2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1477px;
+	left:292px;
+}
+#Eback3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1489px;
+	left:579px;
+}
+#Etop3{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1186px;
+	left:704px;
+}
+#Emiddle3{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1276px;
+	left:537px;
+}
+#Ebottom3{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:969px;
+	left:1001px;
+}
+#Eback4{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1464px;
+	left:440px;
+}
+#Etop4{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1151px;
+	left:45px;
+}
+#Emiddle4{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1283px;
+	left:1003px;
+}
+#Ebottom4{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1564px;
+	left:890px;
+}
+
+
+
+#Gback1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1013px;
+	left:705px;
+}
+#Gtop1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1341px;
+	left:1043px;
+}
+#Gbottom1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1091px;
+	left:1093px;
+}
+#Grightsmall1{
+	height: 45px;
+	position: absolute;
+	background: none;
+	top:808px;
+	left:118px;
+}
+#Gmiddle1{
+	height: 30px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:730px;
+	left:1102px;
+}
+#Gback2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1388px;
+	left:550px;
+}
+#Gtop2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1451px;
+	left:1204px;
+}
+#Gbottom2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1500px;
+	left:487px;
+}
+#Grightsmall2{
+	height: 45px;
+	position: absolute;
+	background: none;
+	top:1056px;
+	left:1042px;
+}
+#Gmiddle2{
+	height: 30px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1149px;
+	left:244px;
+}
+#Gback3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1186px;
+	left:600px;
+}
+#Gtop3{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:927px;
+	left:1008px;
+}
+#Gbottom3{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:764px;
+	left:1018px;
+}
+#Grightsmall3{
+	height: 45px;
+	position: absolute;
+	background: none;
+	top:1493px;
+	left:1008px;
+}
+#Gmiddle3{
+	height: 30px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1221px;
+	left:99px;
+}
+
+
+
+#Hleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:750px;
+	left:80px;
+}
+#Hright1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:762px;
+	left:1264px;
+}
+#Hmiddle1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1351px;
+	left:101px;
+}
+#Hleft2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1022px;
+	left:1236px;
+}
+#Hright2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1399px;
+	left:1102px;
+}
+#Hmiddle2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1155px;
+	left:368px;
+}
+
+
+4
+#Istock1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1035px;
+	left:930px;
+}
+#Itop1{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:703px;
+	left:89px;
+}
+#Ibottom1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:674px;
+	left:134px;
+}
+#Istock2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1053px;
+	left:1216px;
+}
+#Itop2{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1444px;
+	left:899px;
+}
+#Ibottom2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:883px;
+	left:55px;
+}
+#Istock3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1349px;
+	left:1206px;
+}
+#Itop3{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1211px;
+	left:356px;
+}
+#Ibottom3{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1071px;
+	left:1020px;
+}
+#Istock4{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:653px;
+	left:1067px;
+}
+#Itop4{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:899px;
+	left:244px;
+}
+#Ibottom4{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:950px;
+	left:1074px;
+}
+
+
+
+#Lstock1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:725px;
+	left:160px;
+}
+#Lbottom1{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1497px;
+	left:205px;
+}
+#Lstock2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1249px;
+	left:632px;
+}
+#Lbottom2{
+	height: 40px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1342px;
+	left:905px;
+}
+
+
+
+#Nleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:922px;
+	left:1120px;
+}
+#Nright1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:584px;
+	left:989px;
+}
+#Nmiddle1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-30deg);
+	top:1186px;
+	left:1206px;
+}
+#Nleft2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1532px;
+	left:87px;
+}
+#Nright2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1308px;
+	left:607px;
+}
+#Nmiddle2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-30deg);
+	top:1429px;
+	left:125px;
+}
+#Nleft3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:679px;
+	left:1183px;
+}
+#Nright3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:586px;
+	left:38px;
+}
+#Nmiddle3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-30deg);
+	top:534px;
+	left:143px;
+}
+
+
+
+#Oleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:500px;
+	left:100px;
+}
+#Oright1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1609px;
+	left:460px;
+}
+#Otop1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1192px;
+	left:535px;
+}
+#Obottom1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1539px;
+	left:935px;
+}
+#Oleft2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1358px;
+	left:510px;
+}
+#Oright2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1567px;
+	left:1214px;
+}
+#Otop2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:514px;
+	left:1034px;
+}
+#Obottom2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:622px;
+	left:1112px;
+}
+
+
+
+#Pleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:507px;
+	left:1119px;
+}
+#Ptop1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1231px;
+	left:908px;
+}
+#Pbottom1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1642px;
+	left:1052px;
+}
+#Pright1{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:607px;
+	left:1206px;
+}
+
+
+
+#Rleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:481px;
+	left:9px;
+}
+#Rtop1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1563px;
+	left:231px;
+}
+#Rbottom1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:894px;
+	left:644px;
+}
+#Rright1{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:1403px;
+	left:786px;
+}
+#Rslant1{
+	height: 80px;
+	position: absolute;
+	background: none;
+	transform: rotate(-55deg);
+	top:938px;
+	left:852px;
+}
+
+
+
+#Stop1{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:505px;
+	left:1211px;
+}
+#Sleftside1{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:1567px;
+	left:665px;
+}
+#Smiddle1{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:695px;
+	left:985px;
+}
+#Srightside1{
+	height: 65px;
+	position: absolute;
+	background: none;
+	top:1480px;
+	left:1135px;
+}
+#Sbottom1{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1417px;
+	left:885px;
+}
+#Stop2{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1148px;
+	left:785px;
+}
+#Sleftside2{
+	height: 50px;
+	position: absolute;
+	background: none;
+	top:498px;
+	left:165px;
+}
+#Smiddle2{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:562px;
+	left:185px;
+}
+#Srightside2{
+	height: 65px;
+	position: absolute;
+	background: none;
+	top:1367px;
+	left:235px;
+}
+#Sbottom2{
+	height: 50px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1146px;
+	left:985px;
+}
+
+
+
+#Tstock1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:550px;
+	left:182px;
+}
+#Ttop1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1587px;
+	left:246px;
+}
+#Tstock2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1602px;
+	left:428px;
+}
+#Ttop2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1322px;
+	left:316px;
+}
+
+
+
+#Uleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1650px;
+	left:576px;
+}
+#Uright1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1629px;
+	left:837px;
+}
+#Ubottom1{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1410px;
+	left:1060px;
+}
+#Uleft2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1350px;
+	left:41px;
+}
+#Uright2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1269px;
+	left:777px;
+}
+#Ubottom2{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1580px;
+	left:978px;
+}
+#Uleft3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1627px;
+	left:-60px;
+}
+#Uright3{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1035px;
+	left:260px;
+}
+#Ubottom3{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:1491px;
+	left:811px;
+}
+#Uleft4{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1239px;
+	left:643px;
+}
+#Uright4{
+	height: 100px;
+	position: absolute;
+	background: none;
+	top:1193px;
+	left:1066px;
+}
+#Ubottom4{
+	height: 60px;
+	position: absolute;
+	background: none;
+	transform: rotate(90deg);
+	top:743px;
+	left:1035px;
+}
+
+
+
+#Vleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:801px;
+	left:1069px;
+}
+#Vright1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:1331px;
+	left:360px;
+}
+
+
+
+#Wleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:1210px;
+	left:140px;
+}
+#Wmiddleleft1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:971px;
+	left:470px;
+}
+#Wmiddleright1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:1603px;
+	left:90px;
+}
+#Wright1{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:1475px;
+	left:520px;
+}
+#Wleft2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:1599px;
+	left:737px;
+}
+#Wmiddleleft2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:879px;
+	left:1098px;
+}
+#Wmiddleright2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(-15deg);
+	top:1393px;
+	left:620px;
+}
+#Wright2{
+	height: 100px;
+	position: absolute;
+	background: none;
+	transform: rotate(15deg);
+	top:1320px;
+	left:867px;
+}
+
+.center{
+	left:-50px;
+}
+
+/*Make Your Own box*/
+.quoteshadow2{
+	top:1850px;
+	left:0px;
+	font-family: "Nunito";
+	font-size: 2em;
+}
+.directions2{
+	top:1875px;
+	left:0px;
+	font-family: "Montserrat";
+	font-size:1em;
+}
+.puzzlebox2{
+	width:950px;
+	height:550px;
+	background-color: #f0f0f5;
+	position: absolute;
+	top:1900px;
+	left:160px;
+}

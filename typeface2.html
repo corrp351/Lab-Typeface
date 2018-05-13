@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab Typeface</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script text="text/javascript" src="typeface2jquery.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="typeface2style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Muli|Nunito|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+	<div class="push">
+		<div class="pusha color1">
+			<div class="shapes" id="Aleft"></div>
+			<div class="shapes" id="Aright"></div>
+			<div class="shapes" id="Amiddle"></div>
+		</div>
+		<div class="pusha color2">
+			<div class="shapes" id="Bback"></div>
+			<div class="shapes" id="Btop"></div>
+			<div class="shapes" id="Brighttop"></div>
+			<div class="shapes" id="Bmiddle"></div>
+			<div class="shapes" id="Brightbottom"></div>
+			<div class="shapes" id="Bbottom"></div>
+		</div>
+		<div class="pusha color3">
+			<div class="shapes" id="Cback"></div>
+			<div class="shapes" id="Ctop"></div>
+			<div class="shapes" id="Cbottom"></div>
+		</div>
+		<div class="pusha color4">
+			<div class="shapes" id="Dleft"></div>
+			<div class="shapes" id="Dtop"></div>
+			<div class="shapes" id="Dbottom"></div>
+			<div class="shapes" id="Dright"></div>
+		</div>
+		<div class="pusha color5">
+			<div class="shapes" id="Eback"></div>
+			<div class="shapes" id="Etop"></div>
+			<div class="shapes" id="Emiddle"></div>
+			<div class="shapes" id="Ebottom"></div>
+		</div>
+		<div class="pusha color6">
+			<div class="shapes" id="Fback"></div>
+			<div class="shapes" id="Ftop"></div>
+			<div class="shapes" id="Fmiddle"></div>
+		</div>
+		<div class="pusha color7">
+			<div class="shapes" id="Gback"></div>
+			<div class="shapes" id="Gtop"></div>
+			<div class="shapes" id="Grightsmall"></div>
+			<div class="shapes" id="Gmiddle"></div>
+			<div class="shapes" id="Gbottom"></div>
+		</div>
+		<div class="pusha color8">
+			<div class="shapes" id="Hleft"></div>
+			<div class="shapes" id="Hright"></div>
+			<div class="shapes" id="Hmiddle"></div>
+		</div>
+		<div class="pusha color9">
+			<div class="shapes" id="Istock"></div>
+			<div class="shapes" id="Itop"></div>
+			<div class="shapes" id="Ibottom"></div>
+		</div>
+		<div class="pusha color10">
+			<div class="shapes" id="Jstock"></div>
+			<div class="shapes" id="Jtop"></div>
+			<div class="shapes" id="Jbottom"></div>
+		</div>
+		<div class="pushb color11">
+			<div class="shapes" id="Kstock"></div>
+			<div class="shapes" id="Ktop"></div>
+			<div class="shapes" id="Kbottom"></div>
+		</div>
+		<div class="pushb color12">
+			<div class="shapes" id="Lstock"></div>
+			<div class="shapes" id="Lbottom"></div>
+		</div>
+		<div class="pushb color13">
+			<div class="shapes" id="Mleft"></div>
+			<div class="shapes" id="Mright"></div>
+			<div class="shapes" id="Mtopleft"></div>
+			<div class="shapes" id="Mtopright"></div>
+		</div>
+		<div class="pushb color14">
+			<div class="shapes" id="Nleft"></div>
+			<div class="shapes" id="Nright"></div>
+			<div class="shapes" id="Nmiddle"></div>
+		</div>
+		<div class="pushb color15">
+			<div class="shapes" id="Oleft"></div>
+			<div class="shapes" id="Oright"></div>
+			<div class="shapes" id="Otop"></div>
+			<div class="shapes" id="Obottom"></div>
+		</div>
+		<div class="pushb color16">
+			<div class="shapes" id="Pleft"></div>
+			<div class="shapes" id="Ptop"></div>
+			<div class="shapes" id="Pbottom"></div>
+			<div class="shapes" id="Pright"></div>
+		</div>
+		<div class="pushb color17">
+			<div class="shapes" id="Qleft"></div>
+			<div class="shapes" id="Qtop"></div>
+			<div class="shapes" id="Qbottom"></div>
+			<div class="shapes" id="Qright"></div>
+			<div class="shapes" id="Qtail"></div>
+		</div>
+		<div class="pushb color18">
+			<div class="shapes" id="Rleft"></div>
+			<div class="shapes" id="Rtop"></div>
+			<div class="shapes" id="Rbottom"></div>
+			<div class="shapes" id="Rright"></div>
+			<div class="shapes" id="Rslant"></div>
+		</div>
+		<div class="pushb color19">
+			<div class="shapes" id="Stop"></div>
+			<div class="shapes" id="Sleftside"></div>
+			<div class="shapes" id="Smiddle"></div>
+			<div class="shapes" id="Srightside"></div>
+			<div class="shapes" id="Sbottom"></div>
+		</div>
+		<div class="pushc color20">
+			<div class="shapes" id="Tstock"></div>
+			<div class="shapes" id="Ttop"></div>
+		</div>
+		<div class="pushc color21">
+			<div class="shapes" id="Uleft"></div>
+			<div class="shapes" id="Uright"></div>
+			<div class="shapes" id="Ubottom"></div>
+		</div>
+		<div class="pushc color22">
+			<div class="shapes" id="Vleft"></div>
+			<div class="shapes" id="Vright"></div>
+		</div>
+		<div class="pushc color23">
+			<div class="shapes" id="Wleft"></div>
+			<div class="shapes" id="Wmiddleleft"></div>
+			<div class="shapes" id="Wmiddleright"></div>
+			<div class="shapes" id="Wright"></div>
+		</div>
+		<div class="pushc color24">
+			<div class="shapes" id="Xleft"></div>
+			<div class="shapes" id="Xright"></div>
+		</div>
+		<div class="pushc color25">
+			<div class="shapes" id="Yleft"></div>
+			<div class="shapes" id="Yright"></div>
+		</div>
+		<div class="pushc color26">
+			<div class="shapes" id="Zmiddle"></div>
+			<div class="shapes" id="Ztop"></div>
+			<div class="shapes" id="Zbottom"></div>
+		</div>
+	</div>
+
+	<div class="quoteshadow">
+		<center>Whatever good things we build end up building us</center>
+	</div>
+	<div class="directions">
+		<center>Below are the pieces needed to create each letter of this quote... get building!</center>
+	</div>
+	<div>
+		<center><div class="puzzlebox1"></div></center>
+	</div>
+
+<!-- letter pieces -->
+<!-- A -->
+<div class="center">
+	<div class="pusha color1">
+		<div class="shapes grabbable" id="Aleft1"></div>
+	</div>
+	<div class="pusha color1">
+		<div class="shapes grabbable" id="Aright1"></div>
+	</div>
+	<div class="pusha color1">
+		<div class="shapes grabbable" id="Amiddle1"></div>
+	</div>
+
+<!-- B -->
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Bback1"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Btop1"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Brighttop1"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Bmiddle1"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Brightbottom1"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Bbottom1"></div>
+	</div>
+
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Bback2"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Btop2"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Brighttop2"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Bmiddle2"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Brightbottom2"></div>
+	</div>
+	<div class="pusha color2">
+		<div class="shapes grabbable" id="Bbottom2"></div>
+	</div>
+
+<!-- D -->
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dleft1"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dtop1"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dbottom1"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dright1"></div>
+	</div>
+
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dleft2"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dtop2"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dbottom2"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dright2"></div>
+	</div>
+
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dleft3"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dtop3"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dbottom3"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dright3"></div>
+	</div>
+
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dleft4"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dtop4"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dbottom4"></div>
+	</div>
+	<div class="pusha color4">
+		<div class="shapes grabbable" id="Dright4"></div>
+	</div>
+
+<!-- E -->
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Eback1"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Etop1"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Emiddle1"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Ebottom1"></div>
+	</div>
+
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Eback2"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Etop2"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Emiddle2"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Ebottom2"></div>
+	</div>
+
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Eback3"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Etop3"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Emiddle3"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Ebottom3"></div>
+	</div>
+
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Eback4"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Etop4"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Emiddle4"></div>
+	</div>
+	<div class="pusha color5">
+		<div class="shapes grabbable" id="Ebottom4"></div>
+	</div>
+
+<!-- G -->
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gback1"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gtop1"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Grightsmall1"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gmiddle1"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gbottom1"></div>
+	</div>
+
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gback2"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gtop2"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Grightsmall2"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gmiddle2"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gbottom2"></div>
+	</div>
+
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gback3"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gtop3"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Grightsmall3"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gmiddle3"></div>
+	</div>
+	<div class="pusha color7">
+		<div class="shapes grabbable" id="Gbottom3"></div>
+	</div>
+
+<!-- H -->
+	<div class="pusha color8">
+		<div class="shapes grabbable" id="Hleft1"></div>
+	</div>
+	<div class="pusha color8">
+		<div class="shapes grabbable" id="Hright1"></div>
+	</div>
+	<div class="pusha color8">
+		<div class="shapes grabbable" id="Hmiddle1"></div>
+	</div>
+
+	<div class="pusha color8">
+		<div class="shapes grabbable" id="Hleft2"></div>
+	</div>
+	<div class="pusha color8">
+		<div class="shapes grabbable" id="Hright2"></div>
+	</div>
+	<div class="pusha color8">
+		<div class="shapes grabbable" id="Hmiddle2"></div>
+	</div>
+
+<!-- I -->
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Istock1"></div>
+	</div>
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Itop1"></div>
+	</div>
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Ibottom1"></div>
+	</div>
+
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Istock2"></div>
+	</div>
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Itop2"></div>
+	</div>
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Ibottom2"></div>
+	</div>
+
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Istock3"></div>
+	</div>
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Itop3"></div>
+	</div>
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Ibottom3"></div>
+	</div>
+
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Istock4"></div>
+	</div>
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Itop4"></div>
+	</div>
+	<div class="pusha color9">
+		<div class="shapes grabbable" id="Ibottom4"></div>
+	</div>
+
+<!-- L -->
+	<div class="pushb color13">
+		<div class="shapes grabbable" id="Lstock1"></div>
+	</div>
+	<div class="pushb color13">
+		<div class="shapes grabbable" id="Lbottom1"></div>
+	</div>
+
+	<div class="pushb color13">
+		<div class="shapes grabbable" id="Lstock2"></div>
+	</div>
+	<div class="pushb color13">
+		<div class="shapes grabbable" id="Lbottom2"></div>
+	</div>
+
+<!-- N -->
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nleft1"></div>
+	</div>
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nright1"></div>
+	</div>
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nmiddle1"></div>
+	</div>
+
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nleft2"></div>
+	</div>
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nright2"></div>
+	</div>
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nmiddle2"></div>
+	</div>
+
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nleft3"></div>
+	</div>
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nright3"></div>
+	</div>
+	<div class="pushb color14">
+		<div class="shapes grabbable" id="Nmiddle3"></div>
+	</div>
+
+<!-- O -->
+	<div class="pushb color15">
+		<div class="shapes grabbable" id="Oleft1"></div>
+	</div>
+	<div class="pushb color15">
+		<div class="shapes grabbable" id="Oright1"></div>
+	</div>
+	<div class="pushb color15">
+		<div class="shapes grabbable" id="Otop1"></div>
+	</div>
+	<div class="pushb color15">
+		<div class="shapes grabbable" id="Obottom1"></div>
+	</div>
+
+	<div class="pushb color15">
+		<div class="shapes grabbable" id="Oleft2"></div>
+	</div>
+	<div class="pushb color15">
+		<div class="shapes grabbable" id="Oright2"></div>
+	</div>
+	<div class="pushb color15">
+		<div class="shapes grabbable" id="Otop2"></div>
+	</div>
+	<div class="pushb color15">
+		<div class="shapes grabbable" id="Obottom2"></div>
+	</div>
+
+<!-- P -->
+	<div class="pushb color16">
+		<div class="shapes grabbable" id="Pleft1"></div>
+	</div>
+	<div class="pushb color16">
+		<div class="shapes grabbable" id="Ptop1"></div>
+	</div>
+	<div class="pushb color16">
+		<div class="shapes grabbable" id="Pbottom1"></div>
+	</div>
+	<div class="pushb color16">
+		<div class="shapes grabbable" id="Pright1"></div>
+	</div>
+
+<!-- R -->
+	<div class="pushb color18">
+		<div class="shapes grabbable" id="Rleft1"></div>
+	</div>
+	<div class="pushb color18">
+		<div class="shapes grabbable" id="Rtop1"></div>
+	</div>
+	<div class="pushb color18">
+		<div class="shapes grabbable" id="Rbottom1"></div>
+	</div>
+	<div class="pushb color18">
+		<div class="shapes grabbable" id="Rright1"></div>
+	</div>
+	<div class="pushb color18">
+		<div class="shapes grabbable" id="Rslant1"></div>
+	</div>
+
+<!-- S -->
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Stop1"></div>
+	</div>
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Sleftside1"></div>
+	</div>
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Smiddle1"></div>
+	</div>
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Srightside1"></div>
+	</div>
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Sbottom1"></div>
+	</div>
+
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Stop2"></div>
+	</div>
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Sleftside2"></div>
+	</div>
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Smiddle2"></div>
+	</div>
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Srightside2"></div>
+	</div>
+	<div class="pushb color19">
+		<div class="shapes grabbable" id="Sbottom2"></div>
+	</div>
+
+<!-- T -->
+	<div class="pushc color20">
+		<div class="shapes grabbable" id="Tstock1"></div>
+	</div>
+	<div class="pushc color20">
+		<div class="shapes grabbable" id="Ttop1"></div>
+	</div>
+
+	<div class="pushc color20">
+		<div class="shapes grabbable" id="Tstock2"></div>
+	</div>
+	<div class="pushc color20">
+		<div class="shapes grabbable" id="Ttop2"></div>
+	</div>
+
+<!-- U -->
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Uleft1"></div>
+	</div>
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Uright1"></div>
+	</div>
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Ubottom1"></div>
+	</div>
+
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Uleft2"></div>
+	</div>
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Uright2"></div>
+	</div>
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Ubottom2"></div>
+	</div>
+
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Uleft3"></div>
+	</div>
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Uright3"></div>
+	</div>
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Ubottom3"></div>
+	</div>
+
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Uleft4"></div>
+	</div>
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Uright4"></div>
+	</div>
+	<div class="pushc color21">
+		<div class="shapes grabbable" id="Ubottom4"></div>
+	</div>
+<!-- V -->
+	<div class="pushc color22">
+		<div class="shapes grabbable" id="Vleft1"></div>
+	</div>
+	<div class="pushc color22">
+		<div class="shapes grabbable" id="Vright1"></div>
+	</div>
+
+<!-- W -->
+	<div class="pushc color23">
+		<div class="shapes grabbable" id="Wleft1"></div>
+	</div>
+	<div class="pushc color23">
+		<div class="shapes grabbable" id="Wmiddleleft1"></div>
+	</div>
+	<div class="pushc color23">
+		<div class="shapes grabbable" id="Wmiddleright1"></div>
+	</div>
+	<div class="pushc color23">
+		<div class="shapes grabbable" id="Wright1"></div>
+	</div>
+
+	<div class="pushc color23">
+		<div class="shapes grabbable" id="Wleft2"></div>
+	</div>
+	<div class="pushc color23">
+		<div class="shapes grabbable" id="Wmiddleleft2"></div>
+	</div>
+	<div class="pushc color23">
+		<div class="shapes grabbable" id="Wmiddleright2"></div>
+	</div>
+	<div class="pushc color23">
+		<div class="shapes grabbable" id="Wright2"></div>
+	</div>
+</div>
+<!-- Make Your Own Box -->
+	<div class="quoteshadow2">
+		<center>Make Your Own Phrase Or Letter Combinations</center>
+	</div>
+	<div class="directions2">
+		<center>Have fun!</center>
+	</div>
+	<div>
+		<center><div class="puzzlebox2"></div></center>
+	</div>
+
+</body>
+</html>
+
+
+
+
